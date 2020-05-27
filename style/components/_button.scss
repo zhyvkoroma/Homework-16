@@ -1,0 +1,85 @@
+
+.btn-edit,
+.btn-style,
+.btn-add,
+.btn-save,
+.btn-text-color,
+.btn-bg-color,
+.btn-table,
+.btn-list,
+.btn-create-list,
+.btn-create-table{
+    margin: 10px;
+    position: relative;
+    z-index: 101;
+    width: 250px;
+    height: 80px;
+    padding: 20px;
+    border: 2px solid rgb(37, 116, 169);
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .35s;
+    font-size: 25px;
+}
+
+.btn-table,
+.btn-list{
+    width: 250px;
+}
+
+.btn-create-list,
+.btn-create-table{
+    margin-top: 20px;
+}
+
+.btn-edit:hover,
+.btn-style:hover,
+.btn-add:hover,
+.btn-save:hover,
+.btn-text-color:hover,
+.btn-bg-color:hover,
+.btn-table:hover,
+.btn-list:hover,
+.btn-create-list:hover,
+.btn-create-table:hover{
+    color: white;
+   
+}
+
+.btn-edit:hover::after,
+.btn-style:hover::after,
+.btn-add:hover::after,
+.btn-save:hover::after,
+.btn-text-color:hover::after,
+.btn-bg-color:hover::after,
+.btn-table:hover::after,
+.btn-list:hover::after,
+.btn-create-list:hover::after,
+.btn-create-table:hover::after{
+    left: -10px;
+    width: 120%;
+}
+
+.btn-edit::after,
+.btn-style::after,
+.btn-add::after,
+.btn-save::after,
+.btn-text-color::after,
+.btn-bg-color::after,
+.btn-table::after,
+.btn-list::after,
+.btn-create-list::after,
+.btn-create-table::after{
+    position: absolute;
+    transition: .35s;
+    content: "";
+    width: 0;
+    top: 0;
+    height: 140%;
+    left: -10px;
+    transform: skewX(15deg);
+    z-index: -1;
+    background: rgb(37, 116, 169);
+}

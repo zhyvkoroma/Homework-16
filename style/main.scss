@@ -1,0 +1,253 @@
+@import 'components/button';
+@import 'components/checkbox';
+@import 'components/radiobutton';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mali', cursive;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.block {
+    min-height: 290px;
+    border-radius: 5px;
+    background-color: rgba(46, 49, 49, 0.17);
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+}
+
+.top-block {
+    padding-left: 75px;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+.edit-block,
+.style-block {
+    display: none;
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.center-block {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.edit-area {
+    width: 100%;
+    height: 250px;
+    resize: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+.form-color__btn {
+    display: flex;
+}
+
+.style-text {
+    &__checkbox {
+        display: flex;
+
+        .a {
+            margin-right: 15px;
+            margin-top: -3px;
+        }
+    }
+}
+
+.b {
+    margin-right: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.colors {
+    width: 300px;
+    height: 300px;
+    outline: 1px solid white;
+    position: absolute;
+    top: 60px;
+    left: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+}
+
+#fontFamily {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.first,
+.second {
+    display: none;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+// create list
+
+.choose__button {
+    display: flex;
+    justify-content: center;
+}
+
+
+.count-box {
+    display: flex;
+    margin-top: 20px;
+
+    span {
+        font-size: 40px;
+        margin-right: 25px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 25px;
+        height: 45px;
+    }
+}
+
+.type-box {
+    display: flex;
+    margin-top: 20px;
+
+    span {
+        font-size: 40px;
+        margin-right: 25px;
+    }
+
+    select {
+        width: 70.6%;
+        height: 45px;
+        font-size: 25px;
+    }
+
+}
+
+.countTable-box {
+    margin-top: 20px;
+
+    div {
+        display: flex;
+    }
+
+    span {
+        font-size: 30px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 25px;
+        height: 45px;
+    }
+
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.typeTable-box {
+    margin-top: 20px;
+
+    div {
+        display: flex;
+    }
+
+    span {
+        font-size: 30px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 25px;
+        height: 45px;
+    }
+}
+
+.sizeBorder-box{
+    margin-top: 25px;
+    span {
+        font-size: 30px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    input {
+        width: 10%;
+        font-size: 25px;
+        height: 45px;
+    }
+
+    select{
+        width: 10%;
+        font-size: 25px;
+        height: 45px;
+    }
+}
+
+.create-table{
+    border: 2px solid silver;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.create-list{
+    border: 2px solid silver;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+td{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+  }
